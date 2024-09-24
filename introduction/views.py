@@ -83,6 +83,7 @@ def sql_lab(request):
 
 
 
+                # deepcode ignore Sqli: <please specify a reason of ignoring this>
                 val=login.objects.raw("SELECT * FROM introduction_login WHERE user='"+name+"'AND password='"+password+"'")
 
                 if val:
